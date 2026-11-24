@@ -1,0 +1,1135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>西西女性写真_官方影像品牌,专注真实与多元的女性影像社区</title>
+<meta name="description" content="西西女性写真官方网站，专注女性写真影像创作与内容生态，汇聚原创创作者、精品专题与企业动态，呈现真实、多元、高品质的影像故事。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b4496b'/%3E%3Ccircle cx='32' cy='26' r='10' fill='%23f7dfe6'/%3E%3Cpath d='M14 56c2-12 9-18 18-18s16 6 18 18z' fill='%23f7dfe6'/%3E%3C/svg%3E">
+<style>
+:root{
+  --xx-plum:#b4496b;
+  --xx-plum-deep:#8a2f4e;
+  --xx-rose:#f3d6de;
+  --xx-rose-soft:#fbefF3;
+  --xx-ink:#2c2027;
+  --xx-ink-soft:#5c4a53;
+  --xx-line:#ecdde3;
+  --xx-paper:#fffafb;
+  --xx-lav:#cfc3e8;
+  --xx-shadow:0 10px 28px rgba(138,47,78,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  color:var(--xx-ink);
+  background:var(--xx-paper);
+  line-height:1.75;
+  font-size:16px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4,p{margin:0}
+button{font-family:inherit;cursor:pointer}
+
+.xx-container{width:min(1180px,92vw);margin:0 auto}
+.xx-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* 吸顶：公告条 + 页头 */
+.xx-sticky-top{position:sticky;top:0;z-index:80;box-shadow:0 2px 14px rgba(138,47,78,.07)}
+.xx-notice-bar{
+  background:linear-gradient(90deg,var(--xx-plum-deep),var(--xx-plum) 55%,#c86a8a);
+  color:#fff;
+  font-size:13.5px;
+  padding:8px 0;
+}
+.xx-notice-bar .xx-container{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.xx-notice-tag{
+  background:#fff;color:var(--xx-plum-deep);border-radius:999px;
+  font-size:12px;font-weight:700;padding:1px 10px;letter-spacing:.06em;flex:none;
+}
+.xx-notice-text{flex:1;min-width:200px}
+.xx-notice-text strong{font-weight:700}
+.xx-notice-link{font-size:12.5px;border-bottom:1px dashed rgba(255,255,255,.7);white-space:nowrap}
+.xx-header{background:rgba(255,250,251,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--xx-line)}
+.xx-header-inner{display:flex;align-items:center;gap:18px;padding:12px 0}
+.xx-brand{display:flex;align-items:center;gap:10px;flex:none}
+.xx-brand-mark{
+  width:42px;height:42px;border-radius:12px;flex:none;
+  background:radial-gradient(circle at 32% 28%,#f7dfe6 0 30%,transparent 31%),linear-gradient(145deg,var(--xx-plum),var(--xx-plum-deep));
+  display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:15px;letter-spacing:.02em;
+}
+.xx-brand-name{font-size:19px;font-weight:800;letter-spacing:.02em;line-height:1.2}
+.xx-brand-sub{font-size:11px;color:var(--xx-ink-soft);letter-spacing:.22em;text-transform:uppercase}
+.xx-nav{margin-left:auto;display:flex;align-items:center;gap:4px}
+.xx-nav a{
+  font-size:14.5px;padding:7px 12px;border-radius:8px;color:var(--xx-ink-soft);
+  transition:color .2s,background .2s;
+}
+.xx-nav a:hover{color:var(--xx-plum-deep);background:var(--xx-rose-soft)}
+.xx-search{
+  display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--xx-line);
+  border-radius:999px;padding:4px 6px 4px 14px;margin-left:8px;
+}
+.xx-search input{
+  border:0;outline:0;font-size:13.5px;width:150px;background:transparent;color:var(--xx-ink);
+}
+.xx-search button{
+  border:0;border-radius:999px;background:var(--xx-plum);color:#fff;
+  font-size:13px;padding:5px 14px;transition:background .2s;
+}
+.xx-search button:hover{background:var(--xx-plum-deep)}
+.xx-nav-toggle{
+  display:none;border:1px solid var(--xx-line);background:#fff;border-radius:8px;
+  font-size:13px;padding:6px 12px;color:var(--xx-ink);
+}
+.xx-search-feedback{
+  font-size:12.5px;color:var(--xx-plum-deep);background:var(--xx-rose-soft);
+  border-radius:8px;padding:6px 12px;margin:0 auto;max-width:min(1180px,92vw);
+  display:none;
+}
+.xx-search-feedback.xx-show{display:block;margin-bottom:8px}
+
+/* 首屏 左文右侧大图 + 数据条 */
+.xx-hero{padding:56px 0 64px;background:
+  radial-gradient(900px 420px at 88% -10%,rgba(207,195,232,.35),transparent 60%),
+  linear-gradient(180deg,var(--xx-rose-soft),var(--xx-paper) 70%);
+}
+.xx-hero-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:44px;align-items:center}
+.xx-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;
+  color:var(--xx-plum-deep);background:#fff;border:1px solid var(--xx-line);
+  border-radius:999px;padding:4px 14px;margin-bottom:18px;letter-spacing:.06em;
+}
+.xx-hero-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--xx-plum)}
+.xx-hero h1{
+  font-size:clamp(34px,4.6vw,54px);line-height:1.16;letter-spacing:.01em;
+  font-weight:800;color:var(--xx-ink);margin-bottom:8px;
+}
+.xx-hero h1 em{font-style:normal;color:var(--xx-plum-deep)}
+.xx-hero-slogan{font-size:17px;color:var(--xx-plum-deep);font-weight:600;margin-bottom:14px;letter-spacing:.02em}
+.xx-hero-intro{font-size:15px;color:var(--xx-ink-soft);margin-bottom:22px}
+.xx-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.xx-btn{
+  display:inline-flex;align-items:center;gap:8px;border-radius:10px;font-size:14.5px;
+  padding:11px 22px;font-weight:600;border:1px solid transparent;transition:transform .18s,box-shadow .18s,background .18s;
+}
+.xx-btn:hover{transform:translateY(-2px);box-shadow:var(--xx-shadow)}
+.xx-btn-primary{background:var(--xx-plum);color:#fff}
+.xx-btn-primary:hover{background:var(--xx-plum-deep)}
+.xx-btn-ghost{background:#fff;color:var(--xx-plum-deep);border-color:var(--xx-rose)}
+.xx-btn-ghost:hover{background:var(--xx-rose-soft)}
+.xx-hero-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;
+  border-top:1px solid var(--xx-line);padding-top:18px;
+}
+.xx-stat-num{font-size:24px;font-weight:800;color:var(--xx-plum-deep);line-height:1.2}
+.xx-stat-label{font-size:12.5px;color:var(--xx-ink-soft)}
+.xx-hero-visual{position:relative}
+.xx-hero-img{
+  width:100%;aspect-ratio:5/4;border-radius:20px;overflow:hidden;
+  box-shadow:0 24px 50px rgba(138,47,78,.18);border:6px solid #fff;
+}
+.xx-hero-img img{width:100%;height:100%;object-fit:cover}
+.xx-hero-float{
+  position:absolute;left:-16px;bottom:22px;background:#fff;border-radius:14px;
+  padding:12px 16px;box-shadow:var(--xx-shadow);border:1px solid var(--xx-line);max-width:230px;
+}
+.xx-hero-float strong{display:block;font-size:13.5px;color:var(--xx-plum-deep)}
+.xx-hero-float span{font-size:12px;color:var(--xx-ink-soft)}
+
+/* 通用区块 */
+.xx-section{padding:64px 0}
+.xx-section-alt{background:linear-gradient(180deg,#fff,var(--xx-rose-soft))}
+.xx-section-head{margin-bottom:30px;max-width:820px}
+.xx-eyebrow{font-size:12.5px;letter-spacing:.24em;color:var(--xx-plum);font-weight:700;text-transform:uppercase;margin-bottom:8px}
+.xx-section-head h2{font-size:clamp(24px,3vw,32px);font-weight:800;line-height:1.3;margin-bottom:10px}
+.xx-section-head p{color:var(--xx-ink-soft);font-size:15px}
+
+/* 焦点+视频一列图文列表（单列图文列表） */
+.xx-focus-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:32px;align-items:start}
+.xx-focus-main{
+  background:#fff;border:1px solid var(--xx-line);border-radius:18px;overflow:hidden;
+  box-shadow:var(--xx-shadow);transition:transform .2s;
+}
+.xx-focus-main:hover{transform:translateY(-3px)}
+.xx-focus-cover{aspect-ratio:16/9;overflow:hidden;position:relative}
+.xx-focus-cover img{width:100%;height:100%;object-fit:cover}
+.xx-play-tag{
+  position:absolute;left:14px;bottom:14px;background:rgba(44,32,39,.72);color:#fff;
+  font-size:12.5px;border-radius:999px;padding:4px 12px;display:inline-flex;gap:6px;align-items:center;
+}
+.xx-focus-body{padding:20px 22px 22px}
+.xx-tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.xx-tag{font-size:12px;color:var(--xx-plum-deep);background:var(--xx-rose-soft);border-radius:999px;padding:2px 10px}
+.xx-focus-body h3{font-size:21px;line-height:1.4;margin-bottom:8px}
+.xx-focus-body p{font-size:14.5px;color:var(--xx-ink-soft);margin-bottom:14px}
+.xx-meta-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--xx-ink-soft);border-top:1px dashed var(--xx-line);padding-top:12px}
+.xx-meta-row .xx-author{color:var(--xx-plum-deep);font-weight:600}
+.xx-actions{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap}
+.xx-act{
+  border:1px solid var(--xx-line);background:#fff;border-radius:999px;font-size:12.5px;
+  padding:4px 12px;color:var(--xx-ink-soft);transition:all .18s;display:inline-flex;align-items:center;gap:5px;
+}
+.xx-act:hover{border-color:var(--xx-plum);color:var(--xx-plum-deep)}
+.xx-act.xx-active{background:var(--xx-plum);border-color:var(--xx-plum);color:#fff}
+.xx-mini-list{display:flex;flex-direction:column;gap:12px}
+.xx-mini-item{
+  background:#fff;border:1px solid var(--xx-line);border-radius:14px;padding:14px 16px;
+  display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;align-items:center;
+  transition:transform .18s,box-shadow .18s;
+}
+.xx-mini-item:hover{transform:translateY(-2px);box-shadow:var(--xx-shadow)}
+.xx-mini-thumb{width:64px;height:64px;border-radius:10px;overflow:hidden;flex:none}
+.xx-mini-thumb img{width:100%;height:100%;object-fit:cover}
+.xx-mini-item h4{font-size:14.5px;line-height:1.45;margin-bottom:4px}
+.xx-mini-item span{font-size:12px;color:var(--xx-ink-soft)}
+
+/* 关键词解析 */
+.xx-deep-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
+.xx-deep-card{background:#fff;border:1px solid var(--xx-line);border-radius:16px;padding:26px 28px}
+.xx-deep-card h3{font-size:19px;margin-bottom:10px;color:var(--xx-plum-deep)}
+.xx-deep-card p{font-size:15px;color:var(--xx-ink-soft);margin-bottom:12px}
+.xx-deep-card p:last-child{margin-bottom:0}
+.xx-deep-note{
+  display:flex;gap:10px;background:var(--xx-rose-soft);border-radius:12px;padding:12px 16px;
+  font-size:13.5px;color:var(--xx-plum-deep);border-left:3px solid var(--xx-plum);
+}
+
+/* 专题 */
+.xx-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.xx-topic-card{
+  background:#fff;border:1px solid var(--xx-line);border-radius:16px;padding:20px;
+  display:flex;flex-direction:column;gap:10px;transition:transform .2s,box-shadow .2s;
+}
+.xx-topic-card:hover{transform:translateY(-3px);box-shadow:var(--xx-shadow)}
+.xx-topic-status{font-size:12px;color:var(--xx-plum-deep);background:var(--xx-rose-soft);border-radius:999px;padding:2px 10px;align-self:flex-start}
+.xx-topic-card h3{font-size:17px;line-height:1.4}
+.xx-topic-card>p{font-size:13.5px;color:var(--xx-ink-soft)}
+.xx-topic-card ul{display:flex;flex-direction:column;gap:7px;border-top:1px dashed var(--xx-line);padding-top:10px}
+.xx-topic-card li{font-size:13px;color:var(--xx-ink-soft);display:flex;gap:7px}
+.xx-topic-card li::before{content:"·";color:var(--xx-plum);font-weight:800}
+.xx-topic-cover{border-radius:12px;overflow:hidden;aspect-ratio:16/9}
+.xx-topic-cover img{width:100%;height:100%;object-fit:cover}
+
+/* 作者 双列简介 */
+.xx-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.xx-author-card{
+  background:#fff;border:1px solid var(--xx-line);border-radius:16px;padding:20px;
+  display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;align-items:start;
+  transition:transform .2s,box-shadow .2s;
+}
+.xx-author-card:hover{transform:translateY(-3px);box-shadow:var(--xx-shadow)}
+.xx-avatar{
+  width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:22px;font-weight:800;color:#fff;flex:none;letter-spacing:.02em;
+}
+.xx-avatar-a{background:linear-gradient(140deg,#c86a8a,#8a2f4e)}
+.xx-avatar-b{background:linear-gradient(140deg,#a58fd0,#6d5aa8)}
+.xx-avatar-c{background:linear-gradient(140deg,#e2a06a,#b0673a)}
+.xx-avatar-d{background:linear-gradient(140deg,#6fa8a0,#3f7368)}
+.xx-avatar-e{background:linear-gradient(140deg,#8fa0c8,#516184)}
+.xx-avatar-f{background:linear-gradient(140deg,#d08fa8,#a24a6d)}
+.xx-author-card h3{font-size:16.5px;margin-bottom:2px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.xx-author-field{font-size:12.5px;color:var(--xx-plum-deep);font-weight:600;margin-bottom:6px}
+.xx-author-card p{font-size:13.5px;color:var(--xx-ink-soft)}
+.xx-author-nums{display:flex;gap:14px;font-size:12px;color:var(--xx-ink-soft);margin-top:8px}
+.xx-author-nums strong{color:var(--xx-ink);font-size:13px}
+
+/* 评价 双列短评 */
+.xx-review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.xx-review-card{
+  background:#fff;border:1px solid var(--xx-line);border-radius:14px;padding:18px 20px;
+}
+.xx-review-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.xx-review-dot{width:34px;height:34px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:700}
+.xx-review-name{font-size:13.5px;font-weight:700}
+.xx-review-time{font-size:11.5px;color:var(--xx-ink-soft)}
+.xx-review-card p{font-size:13.5px;color:var(--xx-ink-soft)}
+.xx-review-star{color:#e2a06a;font-size:12.5px;letter-spacing:.12em;margin-top:6px}
+
+/* 榜单+动态+合作+FAQ */
+.xx-two-col{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:28px;align-items:start}
+.xx-rank-list{background:#fff;border:1px solid var(--xx-line);border-radius:16px;padding:20px 22px}
+.xx-rank-list h3{font-size:17px;margin-bottom:14px}
+.xx-rank-list li{
+  display:grid;grid-template-columns:26px minmax(0,1fr) auto;gap:12px;align-items:center;
+  padding:9px 0;border-bottom:1px dashed var(--xx-line);font-size:14px;
+}
+.xx-rank-list li:last-child{border-bottom:0}
+.xx-rank-no{font-weight:800;color:var(--xx-plum);font-size:14px}
+.xx-rank-title{color:var(--xx-ink);line-height:1.4}
+.xx-rank-heat{font-size:12px;color:var(--xx-ink-soft)}
+.xx-update-list{display:flex;flex-direction:column;gap:14px}
+.xx-update-item{background:#fff;border:1px solid var(--xx-line);border-radius:14px;padding:16px 18px}
+.xx-update-date{font-size:12px;color:var(--xx-plum);font-weight:700;letter-spacing:.06em}
+.xx-update-item h4{font-size:15px;margin:4px 0 4px}
+.xx-update-item p{font-size:13.5px;color:var(--xx-ink-soft)}
+.xx-partner-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:22px}
+.xx-partner{
+  background:#fff;border:1px solid var(--xx-line);border-radius:12px;padding:14px 10px;
+  text-align:center;font-size:13px;color:var(--xx-ink-soft);font-weight:600;transition:all .2s;
+}
+.xx-partner:hover{border-color:var(--xx-plum);color:var(--xx-plum-deep)}
+.xx-faq-list{display:flex;flex-direction:column;gap:10px}
+.xx-faq-list details{background:#fff;border:1px solid var(--xx-line);border-radius:12px;padding:14px 18px}
+.xx-faq-list summary{font-size:14.5px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:10px}
+.xx-faq-list summary::-webkit-details-marker{display:none}
+.xx-faq-list summary::after{content:"+";color:var(--xx-plum);font-weight:800;font-size:17px;line-height:1}
+.xx-faq-list details[open] summary::after{content:"−"}
+.xx-faq-list details p{font-size:13.5px;color:var(--xx-ink-soft);margin-top:10px}
+
+/* 投稿CTA */
+.xx-cta-band{
+  background:linear-gradient(120deg,var(--xx-plum-deep),var(--xx-plum) 60%,#c86a8a);
+  border-radius:20px;padding:34px 32px;color:#fff;display:flex;align-items:center;gap:24px;
+  flex-wrap:wrap;justify-content:space-between;
+}
+.xx-cta-band h2{font-size:clamp(21px,2.6vw,27px);margin-bottom:6px}
+.xx-cta-band p{font-size:14px;color:rgba(255,255,255,.86)}
+.xx-cta-band .xx-btn-primary{background:#fff;color:var(--xx-plum-deep)}
+.xx-cta-band .xx-btn-ghost{background:transparent;border-color:rgba(255,255,255,.6);color:#fff}
+
+/* 页脚 */
+.xx-footer{background:#241a1f;color:#d9cdd3;padding:48px 0 26px;font-size:13.5px}
+.xx-footer-grid{display:grid;grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));gap:26px}
+.xx-footer h4{color:#fff;font-size:14.5px;margin-bottom:12px}
+.xx-footer p{color:#a896a0;margin-bottom:8px}
+.xx-footer li{margin-bottom:7px;color:#a896a0}
+.xx-footer li a:hover{color:#fff}
+.xx-footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:30px;padding-top:18px;display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between;font-size:12.5px;color:#8d7a84}
+
+/* Toast */
+.xx-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#2c2027;color:#fff;font-size:13.5px;border-radius:999px;padding:10px 22px;
+  opacity:0;pointer-events:none;transition:all .28s;z-index:200;box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+.xx-toast.xx-show{opacity:1;transform:translate(-50%,0)}
+
+/* 弹窗 */
+.xx-modal-mask{
+  position:fixed;inset:0;background:rgba(44,32,39,.55);display:none;align-items:center;justify-content:center;
+  padding:20px;z-index:150;
+}
+.xx-modal-mask.xx-show{display:flex}
+.xx-modal{
+  background:#fff;border-radius:18px;max-width:520px;width:100%;padding:26px 26px 22px;
+  max-height:86vh;overflow:auto;box-shadow:0 30px 70px rgba(0,0,0,.28);
+}
+.xx-modal h3{font-size:19px;margin-bottom:8px}
+.xx-modal p{font-size:14px;color:var(--xx-ink-soft);margin-bottom:12px}
+.xx-modal-close{
+  border:0;background:var(--xx-rose-soft);color:var(--xx-plum-deep);border-radius:8px;
+  font-size:13px;padding:7px 16px;font-weight:600;margin-top:4px;
+}
+.xx-modal textarea,.xx-modal input{
+  width:100%;border:1px solid var(--xx-line);border-radius:10px;padding:10px 12px;
+  font-size:14px;font-family:inherit;margin-bottom:10px;outline:none;color:var(--xx-ink);
+}
+.xx-modal textarea:focus,.xx-modal input:focus{border-color:var(--xx-plum)}
+.xx-modal .xx-btn-primary{width:100%;justify-content:center}
+
+/* 回顶部 */
+.xx-backtop{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--xx-line);background:#fff;color:var(--xx-plum-deep);font-size:18px;
+  box-shadow:var(--xx-shadow);display:none;align-items:center;justify-content:center;z-index:120;
+}
+.xx-backtop.xx-show{display:flex}
+
+/* 搜索高亮 */
+mark.xx-hit{background:#ffe08a;color:var(--xx-ink);border-radius:3px;padding:0 2px}
+
+@media (max-width:980px){
+  .xx-hero-grid{grid-template-columns:1fr;gap:30px}
+  .xx-focus-grid{grid-template-columns:1fr}
+  .xx-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .xx-two-col{grid-template-columns:1fr}
+  .xx-footer-grid{grid-template-columns:1fr 1fr}
+  .xx-partner-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  .xx-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:#fff;
+    border-bottom:1px solid var(--xx-line);padding:10px 4vw 14px;flex-direction:column;
+    align-items:stretch;gap:2px;box-shadow:var(--xx-shadow);
+  }
+  .xx-nav.xx-open{display:flex}
+  .xx-nav a{padding:10px 12px}
+  .xx-header-inner{position:relative;flex-wrap:wrap}
+  .xx-nav-toggle{display:inline-block;margin-left:auto}
+  .xx-search{width:100%;order:5;margin-left:0}
+  .xx-search input{width:100%}
+  .xx-hero{padding:38px 0 44px}
+  .xx-section{padding:46px 0}
+  .xx-topic-grid,.xx-author-grid,.xx-review-grid{grid-template-columns:1fr}
+  .xx-footer-grid{grid-template-columns:1fr}
+  .xx-hero-stats{grid-template-columns:1fr 1fr}
+  .xx-cta-band{padding:26px 22px}
+  .xx-mini-item{grid-template-columns:52px minmax(0,1fr)}
+  .xx-mini-thumb{width:52px;height:52px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="xx-sticky-top">
+  <div class="xx-notice-bar">
+    <div class="xx-container">
+      <span class="xx-notice-tag">官方发布</span>
+      <span class="xx-notice-text"><strong>「她的四季」第三季正式上线</strong>：新增 12 组原创女性写真短片，同步开启年度创作者招募，报名截止 12 月 20 日。</span>
+      <a class="xx-notice-link" href="#xx-topics">查看专题</a>
+    </div>
+  </div>
+  <header class="xx-header">
+    <div class="xx-container xx-header-inner">
+      <a class="xx-brand" href="#xx-hero" aria-label="西西女性写真官网首页">
+        <span class="xx-brand-mark">西西</span>
+        <span>
+          <span class="xx-brand-name">西西女性写真</span>
+          <span class="xx-brand-sub">Official Visual Studio</span>
+        </span>
+      </a>
+      <button class="xx-nav-toggle" id="xxNavToggle" aria-expanded="false" aria-controls="xxNav">菜单</button>
+      <nav class="xx-nav" id="xxNav" aria-label="主导航">
+        <a href="#xx-focus">焦点内容</a>
+        <a href="#xx-insight">关键词解析</a>
+        <a href="#xx-topics">专题企划</a>
+        <a href="#xx-authors">创作者</a>
+        <a href="#xx-reviews">用户口碑</a>
+        <a href="#xx-service">服务与帮助</a>
+      </nav>
+      <form class="xx-search" id="xxSearchForm" role="search" onsubmit="return false;">
+        <label class="xx-sr-only" for="xxSearchInput">搜索写真内容</label>
+        <input id="xxSearchInput" type="search" placeholder="搜索写真专题 / 创作者">
+        <button type="button" id="xxSearchBtn">搜索</button>
+      </form>
+    </div>
+    <div class="xx-search-feedback" id="xxSearchFeedback" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<main id="xx-hero">
+
+  <section class="xx-hero">
+    <div class="xx-container xx-hero-grid">
+      <div>
+        <span class="xx-hero-badge">官方网站 · 企业级影像品牌</span>
+        <h1>西西女性写真</h1>
+        <p class="xx-hero-slogan">真实、多元、有品质的女性影像，从这里被看见</p>
+        <p class="xx-hero-intro">
+          西西女性写真是一家专注女性写真影像的原创内容品牌与视频社区。我们以专业摄影与短片创作为核心，深耕真实、温暖、有力量的女性叙事，为企业、创作者与用户搭建高品质的内容生态。平台坚持正版、高清、原创的作品标准，让每一次按下快门，都成为值得信赖的官方发布。
+        </p>
+        <div class="xx-hero-actions">
+          <a class="xx-btn xx-btn-primary" href="#xx-focus">进入精品内容</a>
+          <a class="xx-btn xx-btn-ghost" href="#xx-topics">浏览专题企划</a>
+          <button class="xx-btn xx-btn-ghost" type="button" id="xxShareBtn">分享本页</button>
+        </div>
+        <div class="xx-hero-stats">
+          <div><div class="xx-stat-num">1,280+</div><div class="xx-stat-label">原创写真作品</div></div>
+          <div><div class="xx-stat-num">320万</div><div class="xx-stat-label">社区累计播放</div></div>
+          <div><div class="xx-stat-num">96%</div><div class="xx-stat-label">用户好评口碑</div></div>
+        </div>
+      </div>
+      <div class="xx-hero-visual">
+        <div class="xx-hero-img">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 640'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fbefF3'/%3E%3Cstop offset='1' stop-color='%23f3d6de'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23b4496b'/%3E%3Cstop offset='1' stop-color='%238a2f4e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='640' fill='url(%23g1)'/%3E%3Ccircle cx='590' cy='170' r='120' fill='%23cfc3e8' opacity='.55'/%3E%3Ccircle cx='620' cy='180' r='62' fill='%23fff' opacity='.7'/%3E%3Cpath d='M0 500 Q200 420 400 480 T800 440 V640 H0Z' fill='%23e7b7c6' opacity='.6'/%3E%3Crect x='120' y='150' width='250' height='330' rx='18' fill='%23fff' opacity='.9'/%3E%3Crect x='140' y='172' width='210' height='240' rx='10' fill='url(%23g2)'/%3E%3Ccircle cx='245' cy='262' r='46' fill='%23f7dfe6'/%3E%3Cpath d='M185 400c4-38 26-58 60-58s56 20 60 58z' fill='%23f7dfe6'/%3E%3Crect x='410' y='300' width='250' height='250' rx='16' fill='%23fff' opacity='.92'/%3E%3Crect x='430' y='320' width='210' height='150' rx='10' fill='%23f3d6de'/%3E%3Ccircle cx='535' cy='395' r='34' fill='%23b4496b' opacity='.8'/%3E%3Cpath d='M490 470 h90' stroke='%23b4496b' stroke-width='8' stroke-linecap='round'/%3E%3Cpath d='M490 494 h140' stroke='%23e7b7c6' stroke-width='8' stroke-linecap='round'/%3E%3Cpath d='M470 540 l14 40 l14-40z' fill='%23b4496b'/%3E%3C/svg%3E" alt="西西女性写真品牌主视觉：自然光下女性写真作品与胶片相机元素">
+        </div>
+        <div class="xx-hero-float">
+          <strong>本周官方上新</strong>
+          <span>《窗边的她》系列 · 8 组原创写真短片</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="xx-section" id="xx-focus">
+    <div class="xx-container">
+      <div class="xx-section-head">
+        <div class="xx-eyebrow">Focus · 焦点内容</div>
+        <h2>焦点推荐：本周值得一看的女性写真影像</h2>
+        <p>由西西女性写真官方编辑部筛选，从光影、情绪到叙事完整度，呈现专业创作者的高清原创作品。每一项内容均附播放、点赞与收藏数据，欢迎在社区留下你的真实评价。</p>
+      </div>
+
+      <div class="xx-focus-grid">
+        <article class="xx-focus-main">
+          <div class="xx-focus-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 540'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232c2027'/%3E%3Cstop offset='1' stop-color='%236b3b50'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='960' height='540' fill='url(%23f1)'/%3E%3Crect x='90' y='70' width='330' height='400' rx='8' fill='%23f3d6de' opacity='.22'/%3E%3Crect x='130' y='110' width='250' height='320' rx='6' fill='%23fbefF3' opacity='.9'/%3E%3Ccircle cx='255' cy='235' r='52' fill='%23b4496b'/%3E%3Cpath d='M175 430c6-62 38-92 80-92s74 30 80 92z' fill='%23b4496b' opacity='.85'/%3E%3Ccircle cx='700' cy='260' r='150' fill='none' stroke='%23e7b7c6' stroke-width='2' opacity='.7'/%3E%3Ccircle cx='700' cy='260' r='100' fill='none' stroke='%23e7b7c6' stroke-width='2' opacity='.5'/%3E%3Cpath d='M470 430 h420' stroke='%23e7b7c6' stroke-width='1.5' opacity='.5'/%3E%3Ctext x='470' y='330' fill='%23f7dfe6' font-family='sans-serif' font-size='46' font-weight='bold'%3E窗边的她%3C/text%3E%3Ctext x='472' y='372' fill='%23d9b6c2' font-family='sans-serif' font-size='19'%3E自然光 · 情绪人像 · 胶片色调%3C/text%3E%3C/svg%3E" alt="《窗边的她》自然光情绪人像写真专题封面">
+            <span class="xx-play-tag">▶ 12:48 · 高清</span>
+          </div>
+          <div class="xx-focus-body">
+            <div class="xx-tag-row">
+              <span class="xx-tag">情绪人像</span>
+              <span class="xx-tag">自然光</span>
+              <span class="xx-tag">创作幕后</span>
+            </div>
+            <h3>《窗边的她》：用一整个下午，等一束刚好的光</h3>
+            <p>从布光笔记到模特沟通，完整记录一次自然光人像的拍摄过程。摄影师阿棠分享如何在普通出租屋里完成一组有呼吸感的女性写真，并给出 5 个可复用的窗边构图方案，适合想要尝试居家创作的新人创作者参考。</p>
+            <div class="xx-meta-row">
+              <span class="xx-author">阿棠_自然光</span>
+              <span>播放 12.6万</span>
+              <span>点赞 <b class="xx-like-count">2,431</b></span>
+              <div class="xx-actions">
+                <button class="xx-act" type="button" data-like>♡ 点赞</button>
+                <button class="xx-act" type="button" data-fav>☆ 收藏</button>
+                <button class="xx-act" type="button" data-copy>复制链接</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="xx-mini-list">
+          <article class="xx-mini-item">
+            <div class="xx-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Crect width='160' height='160' fill='%23f3d6de'/%3E%3Ccircle cx='80' cy='62' r='28' fill='%23b4496b'/%3E%3Cpath d='M34 140c4-40 22-58 46-58s42 18 46 58z' fill='%238a2f4e'/%3E%3Ccircle cx='124' cy='36' r='14' fill='%23cfc3e8'/%3E%3C/svg%3E" alt="双人像对比布光示范封面">
+            </div>
+            <div>
+              <h4>柔光还是硬光？女性人像常用布光对照演示</h4>
+              <span>教程干货 · 播放 8.2万 · 摄影师小满</span>
+            </div>
+          </article>
+          <article class="xx-mini-item">
+            <div class="xx-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Crect width='160' height='160' fill='%232c2027'/%3E%3Crect x='26' y='30' width='108' height='76' rx='8' fill='%23e7b7c6' opacity='.85'/%3E%3Ccircle cx='80' cy='68' r='20' fill='%232c2027'/%3E%3Crect x='44' y='118' width='72' height='10' rx='5' fill='%23f3d6de'/%3E%3C/svg%3E" alt="胶片机翻拍女性写真后期流程封面">
+            </div>
+            <div>
+              <h4>从扫描到调色：胶片写真的完整后期流程</h4>
+              <span>实用技巧 · 播放 6.4万 · 后期师林岸</span>
+            </div>
+          </article>
+          <article class="xx-mini-item">
+            <div class="xx-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Crect width='160' height='160' fill='%236fa8a0'/%3E%3Cpath d='M0 120 Q40 84 80 108 T160 96 V160 H0Z' fill='%23d8ece6' opacity='.8'/%3E%3Ccircle cx='118' cy='44' r='20' fill='%23fff' opacity='.8'/%3E%3C/svg%3E" alt="城市街角女性街拍写真封面">
+            </div>
+            <div>
+              <h4>把城市当影棚：六个真实街角的街拍路线</h4>
+              <span>城市探索 · 播放 9.1万 · 创作者南乔</span>
+            </div>
+          </article>
+          <article class="xx-mini-item">
+            <div class="xx-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Crect width='160' height='160' fill='%23a58fd0'/%3E%3Cpath d='M40 130 L80 40 L120 130Z' fill='%23f3d6de' opacity='.85'/%3E%3Ccircle cx='80' cy='100' r='16' fill='%232c2027'/%3E%3C/svg%3E" alt="女性创作者访谈录制现场封面">
+            </div>
+            <div>
+              <h4>对话南乔：拍了三年女性写真，我学会先聊天</h4>
+              <span>人物访谈 · 播放 5.8万 · 官方编辑部</span>
+            </div>
+          </article>
+          <article class="xx-mini-item">
+            <div class="xx-mini-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3E%3Crect width='160' height='160' fill='%23fbefF3'/%3E%3Crect x='30' y='26' width='100' height='70' rx='6' fill='%23b4496b' opacity='.9'/%3E%3Crect x='44' y='108' width='72' height='8' rx='4' fill='%23cfc3e8'/%3E%3Crect x='44' y='124' width='48' height='8' rx='4' fill='%23e7b7c6'/%3E%3C/svg%3E" alt="新创作者投稿指南封面">
+            </div>
+            <div>
+              <h4>新创作者第一课：如何提交一份合格的写真企划</h4>
+              <span>知识科普 · 播放 4.3万 · 官方编辑部</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="xx-section xx-section-alt" id="xx-insight">
+    <div class="xx-container">
+      <div class="xx-section-head">
+        <div class="xx-eyebrow">Insight · 关键词解析</div>
+        <h2>深度解析：西西女性写真的影像理念与内容生态</h2>
+        <p>作为持续运营的女性写真品牌，我们把“写真”理解为一次双向的看见。以下从品牌定位、创作方法、社区运营与未来方向四个维度，说明西西女性写真为何值得信赖。</p>
+      </div>
+
+      <div class="xx-deep-grid">
+        <article class="xx-deep-card">
+          <h3>一、品牌定位：不是拍照，而是记录真实的人</h3>
+          <p>西西女性写真从成立第一天起，就把“真实”写进了品牌基因。我们不追求千篇一律的模板脸，也不鼓励过度修图带来的失真感。在官方网站上线的每一组作品，都需要经过三重审核：创作者原创声明、拍摄过程记录、成片质量评估。这样的流程让“西西女性写真”在用户心中逐渐成为值得信赖的代名词，也让高清、正版、专业成为平台最基础的品质门槛。</p>
+          <p>在行业观察中我们注意到，女性写真长期被两种叙事拉扯：一种过度浪漫化，把女性简化为被凝视的对象；另一种过度功能化，只强调“出片率”与“种草”。西西女性写真试图走出第三条路——把镜头交还给被拍摄者本人。我们邀请女性创作者参与选题讨论，在拍摄前完成一次不少于三十分钟的沟通，明确她想被如何看见、哪些细节对她重要、哪些表达她不接受。这些看似笨拙的流程，恰恰构成了品牌与普通摄影工作室的区别，也是我们能够在垂直领域持续获得口碑的原因。</p>
+          <p>平台目前拥有 1,280 组以上原创写真作品，覆盖情绪人像、城市街拍、胶片实验、母女合拍、职业女性肖像等多元题材。我们坚持每个季度发布一次《内容生态观察》，向社区公开作品数量、创作者构成与用户反馈摘要，用透明换取信任。对西西女性写真而言，官方网站不只是一个展示窗口，更是品牌与用户之间长期对话的契约。</p>
+        </article>
+
+        <article class="xx-deep-card">
+          <h3>二、创作方法：从选题到成片的四步工作流</h3>
+          <p>很多新人创作者问我们，一组好的女性写真到底是怎么诞生的。西西女性写真的官方方法论把它拆成四步：选题、沟通、拍摄、复盘。选题阶段，创作者需要在平台提交一份不超过 300 字的企划，说明想表达的情绪与场景，并附上 3 张参考图；沟通阶段，摄影师与模特共同确认服装、妆造与边界，任何一方都可以否决不舒适的方案；拍摄阶段强调“少指令、多观察”，用连拍捕捉自然状态；复盘阶段则要求创作者上传不少于 5 张未精修原片，供编辑团队评估真实性。</p>
+          <p>这套工作流并不复杂，却显著降低了“拍完不满意”的概率。2026 年上半年，参与官方企划的创作者返稿率下降了 38%，用户对成片的满意度提升到 96%。我们也在教程类内容中把方法公开，例如《柔光还是硬光》《窗边的她》两期视频，就是把内部工作流拆解给社区看。我们相信，行业领先从来不是靠藏起方法，而是靠不断把标准说清楚，让更多人能做出高品质的内容。</p>
+          <p>在器材选择上，西西女性写真不迷信昂贵设备。官方推荐清单里既有全画幅相机，也有手机与外接补光灯的组合。我们更看重光线理解与情绪调度，而不是参数堆砌。这种务实态度吸引了不少预算有限但创作欲旺盛的年轻创作者，也让平台的内容生态保持了难得的多元与包容。</p>
+        </article>
+
+        <article class="xx-deep-card">
+          <h3>三、社区运营：让评价成为内容的一部分</h3>
+          <p>在西西女性写真，评论区不是附属品，而是内容的一部分。我们设计了一套轻量的社区评价机制：用户可以给作品打分，可以留下 140 字以内的短评，也可以申请成为“作品观察员”，参与季度优秀作品的投票。所有评价都会展示在作品页与专题页，创作者可以回复，但不能删除负面评价，只能补充说明。这条规则写进了创作者公约，也写进了官方网站的帮助中心。</p>
+          <p>我们观察到，真实评价带来的信任远高于任何广告文案。有一位用户在评价里写道：“第一次拍照不用听别人说‘再瘦一点’，摄影师问我今天想成为什么样的人。”这条评价被置顶了三个月，也成为很多新用户了解品牌的入口。为了让社区保持活力，平台每月举办一次主题挑战，例如“我的通勤穿搭”“和妈妈的合照”“出租屋里的光”，优秀作品会进入官方专题并获得流量扶持。比赛、报名、上传、投票这些动作，构成了社区持续运转的节律。</p>
+          <p>与此同时，我们建立了内容安全与隐私保护规范：所有涉及未成年人的作品必须获得监护人书面授权；用户可随时申请下架自己的影像；创作者不得将作品用于未经约定的商业用途。这些条款看起来严肃，但它们正是“用户至上”的具體落点，也是企业社会责任的应有之义。</p>
+        </article>
+
+        <article class="xx-deep-card">
+          <h3>四、未来方向：把女性写真做成一种长期陪伴</h3>
+          <p>面向未来，西西女性写真给自己定了三个方向。第一是继续深耕垂直领域，把情绪人像、职业女性肖像、母女与代际影像做成系列化内容，每年至少完成 4 个大型专题。第二是扩大创作者支持计划，为新人提供拍摄场地补贴、器材借用与编辑指导，2027 年前计划扶持 200 位女性创作者完成首组个人作品。第三是推动行业对话，联合摄影机构、高校与公益组织发布女性影像伦理倡议，让“如何拍摄一个人”成为可以被公开讨论的专业问题。</p>
+          <p>我们并不认为品牌需要不断制造新概念。相反，真正的影响力来自稳定的品质与持续的陪伴。有用户从大学拍到工作，有母女连续三年参与同题企划，也有创作者从投稿新人成长为专题主理人。这些具体的成长轨迹，比任何口号都更能说明西西女性写真存在的意义。官方网站会继续记录这些变化，企业动态会继续公开进展，精品内容会继续坚持原创与高清，社区会继续欢迎每一种真实的表达。</p>
+          <p>如果你也相信影像可以温柔而有力量，欢迎来到西西女性写真。这里有专业的方法、值得信赖的伙伴，也有一群愿意认真看见彼此的人。我们期待你的作品，也期待你的评价。</p>
+        </article>
+
+        <div class="xx-deep-note">
+          内容说明：本文由西西女性写真官方编辑部撰写，用于说明品牌理念与内容生态，相关数据来自平台 2026 年度运营统计。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="xx-section" id="xx-topics">
+    <div class="xx-container">
+      <div class="xx-section-head">
+        <div class="xx-eyebrow">Projects · 专题企划</div>
+        <h2>专题企划：持续更新的女性写真主题系列</h2>
+        <p>每个专题由官方编辑部与社区创作者共同主理，包含影像、文字与创作笔记。以下专题均为持续运营中的精品内容，欢迎报名参与下一期拍摄。</p>
+      </div>
+      <div class="xx-topic-grid">
+        <article class="xx-topic-card">
+          <div class="xx-topic-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23fbefF3'/%3E%3Ccircle cx='120' cy='90' r='52' fill='%23e7b7c6'/%3E%3Cpath d='M0 210 Q120 160 240 200 T480 180 V270 H0Z' fill='%23b4496b' opacity='.35'/%3E%3Crect x='300' y='50' width='120' height='150' rx='10' fill='%23fff' opacity='.8'/%3E%3Ccircle cx='360' cy='110' r='26' fill='%238a2f4e'/%3E%3C/svg%3E" alt="她的四季专题四季光影人像封面">
+          </div>
+          <span class="xx-topic-status">更新中 · 第 3 季</span>
+          <h3>她的四季</h3>
+          <p>以春、夏、秋、冬为线索，记录同一位女性在不同季节里的状态变化。第三季新增 12 组原创短片。</p>
+          <ul>
+            <li>春分：阳台上的第一件薄外套</li>
+            <li>夏至：午后三点的白衬衫与风扇</li>
+            <li>秋深：旧书店里的暖黄灯光</li>
+          </ul>
+        </article>
+
+        <article class="xx-topic-card">
+          <div class="xx-topic-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%232c2027'/%3E%3Crect x='40' y='40' width='150' height='190' rx='8' fill='%23e2a06a' opacity='.55'/%3E%3Crect x='210' y='70' width='150' height='160' rx='8' fill='%23cfc3e8' opacity='.5'/%3E%3Ccircle cx='370' cy='60' r='26' fill='%23f3d6de'/%3E%3Cpath d='M400 240 h60' stroke='%23e7b7c6' stroke-width='6'/%3E%3C/svg%3E" alt="职业女性肖像计划专题封面">
+          </div>
+          <span class="xx-topic-status">招募中 · 报名至 12/20</span>
+          <h3>工位之外</h3>
+          <p>拍摄不同职业女性的下班时刻，呈现工作身份之外的自我。已合作 18 位医生、程序员、花艺师与货车司机。</p>
+          <ul>
+            <li>急诊科护士的凌晨四点</li>
+            <li>女程序员的机械键盘与手办墙</li>
+            <li>花艺师收摊后的最后一束花</li>
+          </ul>
+        </article>
+
+        <article class="xx-topic-card">
+          <div class="xx-topic-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%236fa8a0'/%3E%3Ccircle cx='96' cy='70' r='40' fill='%23f3d6de' opacity='.85'/%3E%3Ccircle cx='180' cy='70' r='40' fill='%23f3d6de' opacity='.7'/%3E%3Cpath d='M0 200 Q120 150 240 190 T480 170 V270 H0Z' fill='%23d8ece6' opacity='.7'/%3E%3Crect x='300' y='90' width='110' height='80' rx='8' fill='%23fff' opacity='.75'/%3E%3C/svg%3E" alt="母女合照代际影像专题封面">
+          </div>
+          <span class="xx-topic-status">已完结 · 共 9 组</span>
+          <h3>和妈妈拍一张</h3>
+          <p>邀请母女共同参与拍摄，用同一套构图记录两代人的面容与关系。全部作品可免费下载高清版本用于家庭留存。</p>
+          <ul>
+            <li>穿同一件旗袍的母女</li>
+            <li>菜市场里的合影计划</li>
+            <li>母亲第一次化妆的下午</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="xx-section xx-section-alt" id="xx-authors">
+    <div class="xx-container">
+      <div class="xx-section-head">
+        <div class="xx-eyebrow">Creators · 创作者矩阵</div>
+        <h2>创作者矩阵：值得关注的女性影像创作者</h2>
+        <p>他们是西西女性写真内容生态的中坚力量。每一位创作者都经过官方认证，作品坚持原创、正版与高清标准。点击卡片可查看简介，欢迎在社区关注他们。</p>
+      </div>
+      <div class="xx-author-grid">
+        <article class="xx-author-card">
+          <div class="xx-avatar xx-avatar-a">棠</div>
+          <div>
+            <h3>阿棠_自然光</h3>
+            <div class="xx-author-field">擅长：自然光情绪人像</div>
+            <p>独立摄影师，专注窗边光与日常场景。拍过 200 多组女性写真，坚持不修脸的拍摄原则，喜欢在出租屋、走廊和菜市场找光。相信被拍者舒服，照片才会好看。</p>
+            <div class="xx-author-nums"><span>作品 <strong>186</strong></span><span>粉丝 <strong>12.4万</strong></span></div>
+          </div>
+        </article>
+
+        <article class="xx-author-card">
+          <div class="xx-avatar xx-avatar-b">乔</div>
+          <div>
+            <h3>南乔的城市笔记</h3>
+            <div class="xx-author-field">擅长：城市街拍与在地文化</div>
+            <p>常驻城市的街头创作者，擅长在通勤路线上寻找拍摄点。她的作品多为自然抓拍，强调人与街道的关系。运营一个街拍路线分享栏目，每月更新三条可复刻路线。</p>
+            <div class="xx-author-nums"><span>作品 <strong>142</strong></span><span>粉丝 <strong>9.8万</strong></span></div>
+          </div>
+        </article>
+
+        <article class="xx-author-card">
+          <div class="xx-avatar xx-avatar-c">岸</div>
+          <div>
+            <h3>林岸_胶片日志</h3>
+            <div class="xx-author-field">擅长：胶片实验与后期调色</div>
+            <p>后期师出身，偏爱颗粒感与偏色实验。他的教程以步骤清晰著称，常用同一张原片演示三种调色方向。正在连载“胶片写真全流程”系列，适合想入门胶片的新人。</p>
+            <div class="xx-author-nums"><span>作品 <strong>98</strong></span><span>粉丝 <strong>7.2万</strong></span></div>
+          </div>
+        </article>
+
+        <article class="xx-author-card">
+          <div class="xx-avatar xx-avatar-d">满</div>
+          <div>
+            <h3>小满的影棚</h3>
+            <div class="xx-author-field">擅长：布光教学与商业人像</div>
+            <p>影棚摄影师，服务过多个独立服装品牌。擅长用最简单的灯具做出层次，视频教程里常把布光图画在纸上讲解。她主张先理解光，再谈器材，作品风格干净利落。</p>
+            <div class="xx-author-nums"><span>作品 <strong>121</strong></span><span>粉丝 <strong>6.5万</strong></span></div>
+          </div>
+        </article>
+
+        <article class="xx-author-card">
+          <div class="xx-avatar xx-avatar-e">迟</div>
+          <div>
+            <h3>迟到的信</h3>
+            <div class="xx-author-field">擅长：情感故事与影像随笔</div>
+            <p>以文字见长的创作者，常为写真作品配写短文。她的影像随笔关注女性成长与亲密关系，语言克制。参与多个专题的文案主理，也拍摄少量自拍像作品。</p>
+            <div class="xx-author-nums"><span>作品 <strong>64</strong></span><span>粉丝 <strong>5.1万</strong></span></div>
+          </div>
+        </article>
+
+        <article class="xx-author-card">
+          <div class="xx-avatar xx-avatar-f">瑚</div>
+          <div>
+            <h3>珊瑚不是树</h3>
+            <div class="xx-author-field">擅长：母女合拍与家庭影像</div>
+            <p>两个孩子的母亲，也是家庭影像记录者。她的作品温柔、生活流，常在厨房和阳台完成拍摄。主持“和妈妈拍一张”专题，帮助许多家庭留下珍贵的代际合影。</p>
+            <div class="xx-author-nums"><span>作品 <strong>87</strong></span><span>粉丝 <strong>8.3万</strong></span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="xx-section" id="xx-reviews">
+    <div class="xx-container">
+      <div class="xx-section-head">
+        <div class="xx-eyebrow">Voices · 用户口碑</div>
+        <h2>用户口碑：来自社区的真实评价</h2>
+        <p>以下评价来自西西女性写真的注册用户，内容经授权展示。我们保留不同长度的声音，因为它们共同构成了品牌的口碑。</p>
+      </div>
+      <div class="xx-review-grid">
+        <article class="xx-review-card">
+          <div class="xx-review-head">
+            <span class="xx-review-dot" style="background:#b4496b">青</span>
+            <div><div class="xx-review-name">青梅不酸</div><div class="xx-review-time">2026.11.18</div></div>
+          </div>
+          <p>第一次参加线下企划，从报名到拍摄都很顺利。摄影师提前跟我聊了四十分钟，问我想要什么样的自己，而不是让我照着样片摆姿势。成片出来那一刻有点想哭。</p>
+          <div class="xx-review-star">★★★★★</div>
+        </article>
+
+        <article class="xx-review-card">
+          <div class="xx-review-head">
+            <span class="xx-review-dot" style="background:#6d5aa8">林</span>
+            <div><div class="xx-review-name">林间有雾</div><div class="xx-review-time">2026.11.14</div></div>
+          </div>
+          <p>教程真的很扎实。布光那期我照着做了两次，第三次就自己会调整角度了。希望以后多出一些预算有限的方案。</p>
+          <div class="xx-review-star">★★★★☆</div>
+        </article>
+
+        <article class="xx-review-card">
+          <div class="xx-review-head">
+            <span class="xx-review-dot" style="background:#b0673a">阿</span>
+            <div><div class="xx-review-name">阿岚的相机包</div><div class="xx-review-time">2026.11.09</div></div>
+          </div>
+          <p>平台对原创的把关是真的严格。我提交的作品因为参考图来源不清被打回两次，一开始有点不理解，后来觉得这样对大家都好。现在我的作品在站内已经是高清正版授权状态。</p>
+          <div class="xx-review-star">★★★★★</div>
+        </article>
+
+        <article class="xx-review-card">
+          <div class="xx-review-head">
+            <span class="xx-review-dot" style="background:#3f7368">小</span>
+            <div><div class="xx-review-name">小满前夜</div><div class="xx-review-time">2026.11.02</div></div>
+          </div>
+          <p>专题策划很用心，“和妈妈拍一张”我带着我妈去拍了，她紧张得一直笑。现在那张照片放大挂在家里客厅。</p>
+          <div class="xx-review-star">★★★★★</div>
+        </article>
+
+        <article class="xx-review-card">
+          <div class="xx-review-head">
+            <span class="xx-review-dot" style="background:#516184">周</span>
+            <div><div class="xx-review-name">周三下午茶</div><div class="xx-review-time">2026.10.27</div></div>
+          </div>
+          <p>整体体验不错，就是热门专题的报名名额太少了，经常抢不到。希望能增加线上投稿的通道，让外地用户也有机会参与。</p>
+          <div class="xx-review-star">★★★★☆</div>
+        </article>
+
+        <article class="xx-review-card">
+          <div class="xx-review-head">
+            <span class="xx-review-dot" style="background:#a24a6d">柚</span>
+            <div><div class="xx-review-name">柚子汽水</div><div class="xx-review-time">2026.10.21</div></div>
+          </div>
+          <p>关注这个社区两年了，看着它从几十组作品到现在上千组。评论区氛围一直挺好，很少看到外貌攻击，这点很难得。</p>
+          <div class="xx-review-star">★★★★★</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="xx-section xx-section-alt" id="xx-service">
+    <div class="xx-container">
+      <div class="xx-section-head">
+        <div class="xx-eyebrow">Service · 服务与帮助</div>
+        <h2>企业动态、合作品牌与常见问题</h2>
+        <p>西西女性写真官方网站持续公开品牌进展，也欢迎机构与创作者联系我们。以下信息定期更新，帮助新朋友快速了解平台规则。</p>
+      </div>
+
+      <div class="xx-two-col">
+        <div>
+          <div class="xx-rank-list">
+            <h3>本月口碑榜 · 女性写真作品热度</h3>
+            <ul>
+              <li><span class="xx-rank-no">01</span><span class="xx-rank-title">窗边的她：自然光情绪人像</span><span class="xx-rank-heat">热度 98.2</span></li>
+              <li><span class="xx-rank-no">02</span><span class="xx-rank-title">把城市当影棚：街拍路线</span><span class="xx-rank-heat">热度 94.6</span></li>
+              <li><span class="xx-rank-no">03</span><span class="xx-rank-title">和妈妈拍一张 · 旗袍合影</span><span class="xx-rank-heat">热度 91.3</span></li>
+              <li><span class="xx-rank-no">04</span><span class="xx-rank-title">柔光还是硬光：布光对照</span><span class="xx-rank-heat">热度 88.7</span></li>
+              <li><span class="xx-rank-no">05</span><span class="xx-rank-title">工位之外：急诊科护士的凌晨</span><span class="xx-rank-heat">热度 85.1</span></li>
+              <li><span class="xx-rank-no">06</span><span class="xx-rank-title">胶片写真完整后期流程</span><span class="xx-rank-heat">热度 82.4</span></li>
+            </ul>
+          </div>
+
+          <div class="xx-partner-strip">
+            <div class="xx-partner">光影出版社</div>
+            <div class="xx-partner">白盒子摄影空间</div>
+            <div class="xx-partner">城市文化周</div>
+            <div class="xx-partner">她行公益基金</div>
+          </div>
+        </div>
+
+        <div class="xx-update-list">
+          <article class="xx-update-item">
+            <div class="xx-update-date">2026.11.20 · 官方发布</div>
+            <h4>「她的四季」第三季正式上线</h4>
+            <p>新增 12 组原创写真短片，冬季章节开放报名，创作者可在投稿入口提交企划。</p>
+          </article>
+          <article class="xx-update-item">
+            <div class="xx-update-date">2026.11.12 · 内容生态</div>
+            <h4>年度创作者扶持计划启动</h4>
+            <p>面向首次提交作品的女性创作者，提供场地补贴、器材借用与一对一编辑指导，名额 40 位。</p>
+          </article>
+          <article class="xx-update-item">
+            <div class="xx-update-date">2026.10.30 · 品牌动态</div>
+            <h4>发布女性影像伦理倡议 1.0</h4>
+            <p>联合三家摄影机构与两家公益组织，公开拍摄沟通、授权与下架流程的行业建议。</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="xx-faq-list" style="margin-top:30px">
+        <details open>
+          <summary>如何向西西女性写真投稿？</summary>
+          <p>注册账号后进入投稿入口，填写企划标题、作品简介与授权说明，并上传不超过 3 张预览图。编辑部通常在 7 个工作日内回复，通过后会有编辑对接后续拍摄与发布安排。</p>
+        </details>
+        <details>
+          <summary>作品发布后可以修改或下架吗？</summary>
+          <p>可以。创作者可随时在个人中心申请修改文案或下架作品。若涉及被拍摄者本人意愿变更，我们会在 24 小时内响应下架请求，并同步清理相关推荐位。</p>
+        </details>
+        <details>
+          <summary>平台对修图有什么要求？</summary>
+          <p>我们允许基础的色彩与明暗调整，但不鼓励改变人物骨相与体型的重度修图。涉及磨皮、瘦脸等处理时，需在作品说明中注明，保障观看者与参与者的知情权。</p>
+        </details>
+        <details>
+          <summary>未成年人可以参与拍摄吗？</summary>
+          <p>可以，但必须获得监护人书面授权，并由监护人全程陪同。相关作品不会进入商业合作推荐，平台保留审核与拒绝发布的权利。</p>
+        </details>
+        <details>
+          <summary>机构合作如何联系？</summary>
+          <p>可通过页面底部的合作邮箱提交品牌简介与合作诉求，我们会在 3 个工作日内回复。合作范围包括场地支持、专题联办、线下展览与公益项目。</p>
+        </details>
+        <details>
+          <summary>作品的高清文件如何获取？</summary>
+          <p>已获授权的作品会在作品页提供高清下载入口，下载需登录账号。未经创作者授权，任何形式的二次分发都不被允许。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="xx-section">
+    <div class="xx-container">
+      <div class="xx-cta-band">
+        <div>
+          <h2>把你的故事，交给西西女性写真</h2>
+          <p>无论你是摄影师、被拍摄者，还是只想记录生活的普通人，这里都有一个位置留给你。投稿通道长期开放。</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <button class="xx-btn xx-btn-primary" type="button" id="xxSubmitBtn">我要投稿</button>
+          <button class="xx-btn xx-btn-ghost" type="button" id="xxShareBtn2">分享给朋友</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="xx-footer">
+  <div class="xx-container">
+    <div class="xx-footer-grid">
+      <div>
+        <h4>西西女性写真</h4>
+        <p>官方网站 · 原创女性写真影像品牌</p>
+        <p>我们致力于为创作者与企业搭建高品质内容生态，坚持原创、正版、高清与专业，让真实的女性影像被更多人看见。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#xx-focus">焦点内容</a></li>
+          <li><a href="#xx-insight">关键词解析</a></li>
+          <li><a href="#xx-topics">专题企划</a></li>
+          <li><a href="#xx-authors">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区与服务</h4>
+        <ul>
+          <li><a href="#xx-reviews">用户口碑</a></li>
+          <li><a href="#xx-service">常见问题</a></li>
+          <li>投稿与报名</li>
+          <li>版权与隐私说明</li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li>合作邮箱：hello@xixi-photo.example</li>
+          <li>内容咨询：editor@xixi-photo.example</li>
+          <li>工作时间：周一至周五 10:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="xx-footer-bottom">
+      <span>西西女性写真官方网站 | 版权所有 | 持续运营中</span>
+      <span>备案号：京ICP备2026011888号-2</span>
+    </div>
+  </div>
+</footer>
+
+<div class="xx-toast" id="xxToast" role="status" aria-live="polite"></div>
+
+<div class="xx-modal-mask" id="xxModalMask">
+  <div class="xx-modal" role="dialog" aria-modal="true" aria-labelledby="xxModalTitle">
+    <h3 id="xxModalTitle">投稿入口</h3>
+    <p id="xxModalDesc">填写你的基础信息，编辑部会在 7 个工作日内与你联系。</p>
+    <div id="xxModalBody">
+      <input type="text" id="xxSubmitName" placeholder="你的昵称" aria-label="你的昵称">
+      <input type="text" id="xxSubmitTopic" placeholder="想拍的主题，例如：出租屋里的光" aria-label="想拍的主题">
+      <textarea id="xxSubmitIntro" rows="3" placeholder="用一两句话介绍你的拍摄想法" aria-label="拍摄想法"></textarea>
+    </div>
+    <button class="xx-btn xx-btn-primary" type="button" id="xxModalSubmit">提交</button>
+    <button class="xx-modal-close" type="button" id="xxModalClose">关闭</button>
+  </div>
+</div>
+
+<button class="xx-backtop" id="xxBackTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function () {
+  'use strict';
+
+  var toastEl = document.getElementById('xxToast');
+  var toastTimer = null;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add('xx-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      toastEl.classList.remove('xx-show');
+    }, 2200);
+  }
+
+  /* 移动端导航折叠 */
+  var navToggle = document.getElementById('xxNavToggle');
+  var nav = document.getElementById('xxNav');
+  navToggle.addEventListener('click', function () {
+    var open = nav.classList.toggle('xx-open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      nav.classList.remove('xx-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  /* 搜索：前端反馈与高亮 */
+  var searchForm = document.getElementById('xxSearchForm');
+  var searchInput = document.getElementById('xxSearchInput');
+  var searchBtn = document.getElementById('xxSearchBtn');
+  var searchFeedback = document.getElementById('xxSearchFeedback');
+  var searchables = Array.prototype.slice.call(
+    document.querySelectorAll('.xx-focus-main h3, .xx-mini-item h4, .xx-topic-card h3, .xx-author-card h3, .xx-review-name')
+  );
+
+  function clearHits() {
+    document.querySelectorAll('mark.xx-hit').forEach(function (m) {
+      var parent = m.parentNode;
+      parent.replaceChild(document.createTextNode(m.textContent), m);
+      parent.normalize();
+    });
+    searchables = Array.prototype.slice.call(
+      document.querySelectorAll('.xx-focus-main h3, .xx-mini-item h4, .xx-topic-card h3, .xx-author-card h3, .xx-review-name')
+    );
+  }
+
+  function highlight(node, keyword) {
+    if (!node || !keyword) return;
+    var text = node.textContent;
+    var idx = text.indexOf(keyword);
+    if (idx < 0) return;
+    node.textContent = '';
+    node.appendChild(document.createTextNode(text.slice(0, idx)));
+    var mark = document.createElement('mark');
+    mark.className = 'xx-hit';
+    mark.textContent = keyword;
+    node.appendChild(mark);
+    node.appendChild(document.createTextNode(text.slice(idx + keyword.length)));
+  }
+
+  function runSearch() {
+    var kw = searchInput.value.trim();
+    clearHits();
+    if (!kw) {
+      searchFeedback.textContent = '请输入关键词，例如“写真”“胶片”“母女”。';
+      searchFeedback.classList.add('xx-show');
+      return;
+    }
+    var hits = 0;
+    searchables.forEach(function (node) {
+      if (node.textContent.indexOf(kw) >= 0) {
+        highlight(node, kw);
+        hits++;
+      }
+    });
+    searchFeedback.textContent = hits > 0
+      ? '已为你高亮 ' + hits + ' 条与“' + kw + '”相关的内容。'
+      : '暂未找到与“' + kw + '”相关的内容，试试“写真”“四季”或“胶片”。';
+    searchFeedback.classList.add('xx-show');
+    if (hits > 0) {
+      var firstHit = document.querySelector('mark.xx-hit');
+      if (firstHit) {
+        firstHit.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }
+  searchBtn.addEventListener('click', runSearch);
+  searchInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      runSearch();
+    }
+  });
+
+  /* 点赞 / 收藏 */
+  document.querySelectorAll('[data-like]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var active = btn.classList.toggle('xx-active');
+      var counter = btn.closest('.xx-focus-body').querySelector('.xx-like-count');
+      if (counter) {
+        var n = parseInt(counter.textContent.replace(/,/g, ''), 10) || 0;
+        n = active ? n + 1 : Math.max(0, n - 1);
+        counter.textContent = n.toLocaleString('en-US');
+      }
+      btn.textContent = active ? '♥ 已点赞' : '♡ 点赞';
+      toast(active ? '感谢你的点赞' : '已取消点赞');
+    });
+  });
+
+  document.querySelectorAll('[data-fav]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var active = btn.classList.toggle('xx-active');
+      btn.textContent = active ? '★ 已收藏' : '☆ 收藏';
+      toast(active ? '已加入收藏夹' : '已取消收藏');
+    });
+  });
+
+  /* 复制链接 */
+  function copyLink() {
+    var done = function () { toast('链接已复制，欢迎分享给朋友'); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(window.location.href).then(done).catch(function () {
+        toast('复制失败，请手动复制地址栏链接');
+      });
+    } else {
+      var input = document.createElement('input');
+      input.value = window.location.href;
+      document.body.appendChild(input);
+      input.select();
+      try { document.execCommand('copy'); done(); }
+      catch (err) { toast('复制失败，请手动复制地址栏链接'); }
+      document.body.removeChild(input);
+    }
+  }
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', copyLink);
+  });
+
+  /* 分享提示 */
+  function shareTip() {
+    if (navigator.share) {
+      navigator.share({ title: document.title, text: '西西女性写真官方网站' }).catch(function () {
+        toast('可复制链接分享至微信、微博或 QQ');
+      });
+    } else {
+      copyLink();
+    }
+  }
+  var shareBtn = document.getElementById('xxShareBtn');
+  var shareBtn2 = document.getElementById('xxShareBtn2');
+  if (shareBtn) shareBtn.addEventListener('click', shareTip);
+  if (shareBtn2) shareBtn2.addEventListener('click', shareTip);
+
+  /* 投稿弹窗 */
+  var mask = document.getElementById('xxModalMask');
+  var modalTitle = document.getElementById('xxModalTitle');
+  var modalDesc = document.getElementById('xxModalDesc');
+  var modalBody = document.getElementById('xxModalBody');
+  var modalSubmit = document.getElementById('xxModalSubmit');
+  var modalClose = document.getElementById('xxModalClose');
+  var submitBtn = document.getElementById('xxSubmitBtn');
+
+  function openModal() {
+    mask.classList.add('xx-show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    mask.classList.remove('xx-show');
+    document.body.style.overflow = '';
+  }
+  if (submitBtn) submitBtn.addEventListener('click', openModal);
+  modalClose.addEventListener('click', closeModal);
+  mask.addEventListener('click', function (e) {
+    if (e.target === mask) closeModal();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && mask.classList.contains('xx-show')) closeModal();
+  });
+  modalSubmit.addEventListener('click', function () {
+    var name = document.getElementById('xxSubmitName').value.trim();
+    var topic = document.getElementById('xxSubmitTopic').value.trim();
+    if (!name || !topic) {
+      toast('请填写昵称与拍摄主题');
+      return;
+    }
+    closeModal();
+    toast('投稿信息已记录，编辑部将在 7 个工作日内联系你');
+    document.getElementById('xxSubmitName').value = '';
+    document.getElementById('xxSubmitTopic').value = '';
+    document.getElementById('xxSubmitIntro').value = '';
+  });
+
+  /* 回到顶部 */
+  var backTop = document.getElementById('xxBackTop');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 500) {
+      backTop.classList.add('xx-show');
+    } else {
+      backTop.classList.remove('xx-show');
+    }
+  }, { passive: true });
+  backTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+</body>
+          </html>
